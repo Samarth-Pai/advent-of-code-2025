@@ -1,1 +1,5 @@
 **/input.txt
+input.txt
+
+# Ignore local puzzle input files placed next to solution scripts
+# Use both patterns in case of different git versions interpreting **/ differently
