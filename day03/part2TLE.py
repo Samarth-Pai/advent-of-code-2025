@@ -12,13 +12,15 @@ def f(ind, num, line, dp):
         return dp[ind][num]
     pick = f(ind+1, num + line[ind], line, dp)
     noPick = f(ind+1, num, line, dp)
-    return max(pick, noPick)
+    dp[ind][num] = max(pick, noPick)
+    return dp[ind][num]
     
     
 for line in lines:
     dp = [defaultdict(lambda: -1) for _ in range(len(line))]
 
     maxi = f(0, "", line, dp)
+    print(line)
     ans += maxi
     
 print(ans)
