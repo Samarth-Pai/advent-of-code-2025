@@ -1,5 +1,7 @@
 **/input.txt
 input.txt
+day09/part2.py
+day10/part2.py
 
 # Ignore local puzzle input files placed next to solution scripts
 # Use both patterns in case of different git versions interpreting **/ differently
